@@ -35,7 +35,7 @@ export default function Projects({projects}) {
                         Main projects
                     </div>
                     <div className={styles.projects__titleContainer_supTitle}>
-                        Here I have all my main projects and what I'm going to do soon.
+                        Here I have all my main projects and what I&apos;m going to do soon.
                     </div>
                 </div>
                 <div className={styles.projects__projectsContainer}>

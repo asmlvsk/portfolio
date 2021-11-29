@@ -7,8 +7,8 @@ export default function about() {
     return (
         <motion.div 
         exit={{opacity: 0}} 
-        initial="initial"
-        animate="animate"
+            initial="initial"
+    animate="animate"
         className={styles.about__body}>
             <div className={styles.about__container}>
 
@@ -26,7 +26,7 @@ export default function about() {
                         <h2>Uniqueness</h2>
                         <h4>
                             Not only default patterns!
-                            I'm ready to make something interesting and unique.
+                            I&apos;m ready to make something interesting and unique.
                             In my design ideas, I try to make my work unique and I want to convey this desire to all my projects.
                         </h4>
                         <h2>Simplicity</h2>

@@ -22,9 +22,9 @@ export default function Footer() {
                 <div className={styles.footer__column}>
                     <div className={styles.footer__title}>Get in Touch</div>
                     <div className={styles.footer__columnBodyGet}>                        
-                        <a href="https://www.linkedin.com/in/artem-smoilovskyi-5082141ba/" target="_blank"><AiFillLinkedin/></a>
-                        <a href="mailto:smoilovskyi151@gmail.com" target="_blank"><AiFillMail/></a>
-                        <a href="https://github.com/asmlvsk/" target="_blank"><AiFillGithub/></a>
+                        <a href="https://www.linkedin.com/in/artem-smoilovskyi-5082141ba/" rel="noopener noreferrer" target="_blank"><AiFillLinkedin/></a>
+                        <a href="mailto:smoilovskyi151@gmail.com" rel="noopener noreferrer" target="_blank"><AiFillMail/></a>
+                        <a href="https://github.com/asmlvsk/" rel="noopener noreferrer" target="_blank"><AiFillGithub/></a>
                     </div>
                 </div>
 

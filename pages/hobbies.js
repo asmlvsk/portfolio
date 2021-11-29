@@ -2,6 +2,7 @@ import React from 'react'
 import styles from '../styles/Hobbies/Hobbies.module.css'
 import { motion } from 'framer-motion';
 
+
 export default function hobbies() {
 
     const images = [
@@ -24,9 +25,9 @@ export default function hobbies() {
             <div className={styles.hob__col}>
                 <div className={styles.hob__imgs}>
                     {images.map(item =>(
-                        <img className={styles.hob__img} src={item.image} alt="" />
+                        <img key={item.id} className={styles.hob__img} src={item.image} alt="" />
                     ))}
-                </div>
+            </div>
 
             </div>
         </motion.div>

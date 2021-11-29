@@ -43,7 +43,7 @@ export default function Home({projects}) {
           initial="initial"
           animate="animate"
           className={styles.main__textBlock}>
-            <h1>Hi, I'm Artem</h1>
+            <h1>Hi, I&apos;m Artem</h1>
             <h4>fullstack is my passion</h4>
           </motion.div>
 
@@ -54,7 +54,7 @@ export default function Home({projects}) {
           initial="initial"
           animate="animate"
           className={styles.main__textBlock}>
-            <h1>Hi, I'm Artem</h1>
+            <h1>Hi, I&apos;m Artem</h1>
             <h4>fullstack is my passion</h4>
           </motion.div>
         </div> 
@@ -78,8 +78,8 @@ export default function Home({projects}) {
                 <div className={styles.projects__suptitle}>{project.supTitle}</div>
               </div>
               <div className={styles.projects__buttons}>
-                <a href={project.githubBtn} target="_blank"><Buttons content="Github"/></a>
-                <a href={project.demoBtn} target="_blank"><Buttons content="Demo"/></a>
+                <a href={project.githubBtn} rel="noopener noreferrer" target="_blank"><Buttons content="Github"/></a>
+                <a href={project.demoBtn} rel="noopener noreferrer" target="_blank"><Buttons content="Demo"/></a>
               </div>
             </div>
             <img src={project.imageLink} className={styles.projects__pic}></img>

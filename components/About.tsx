@@ -27,7 +27,7 @@ export default function About() {
             </motion.div>
             <div className={styles.about__rightSide}>
                 <div className={styles.about__rightSide_text}>
-                "Work and you’ll get what you need; work harder and you’ll get what you want."
+                "Work and you&apos;ll get what you need; work harder and you&apos;ll get what you want."
                     Prabakaran Thirumalai
                 </div>
             </div>
