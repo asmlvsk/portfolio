@@ -1,0 +1,41 @@
+.hob__body{
+    background-color: rgb(39, 39, 39);
+    padding: 10rem 10rem 2rem 10rem;
+}
+
+.hob__col{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.hob__imgs{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+    grid-gap: 2rem;
+}
+
+.hob__img{
+
+    vertical-align: middle;
+    width: 100%;
+}
+
+@media (max-width: 860px) {
+    .hob__imgs{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 2rem;
+    }
+}
+
+@media (max-width: 615px) {
+    .hob__body{
+        background-color: rgb(39, 39, 39);
+        padding: 10rem 1rem 2rem 1rem;
+    }
+    .hob__imgs{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-gap: 2rem;
+    }
+}

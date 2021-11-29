@@ -1,0 +1,72 @@
+.socials{
+    position: absolute;
+    font-size: 3rem;
+    display: flex;
+    max-width: 1400px;
+    max-height: 100%;
+    gap: 6rem;
+    inset: 60% 0 0 0;
+}
+
+.socIconG, .socIconL, .socIconM{
+    position: absolute;
+}
+
+.socIconG{
+    left: 20%;
+}
+
+.socIconL{
+    top: 40%;
+    left: 50%;
+}
+
+.socIconM{
+    top: -70%;
+    left: 10%;
+}
+
+
+.react_icon{
+    position: absolute;
+    font-size: 8rem;
+    opacity: 0.1;
+    left: -2.5rem;
+    top: -2.5rem;
+}
+
+.icon__wrapper{
+    position: absolute;
+}
+
+@media (max-width: 615px) {
+    .socials{
+        gap: 2rem;
+        inset: 50% 0 0 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+    }
+
+    .socIconG{
+        position: relative;
+        left: 0;
+    }
+    
+    .socIconL{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    
+    .socIconM{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .react_icon{
+        display: none;
+    }
+}

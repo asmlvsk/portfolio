@@ -1,0 +1,53 @@
+.btnDesign {
+    width: 130px;
+    height: 40px;
+    padding: 10px 25px;
+    border: 2px solid #000;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    z-index: 1;
+    -webkit-transition: all 0.3s linear;
+     transition: all 0.3s linear;
+ }
+
+ .btnDesign:hover {
+   background: transparent;
+   color: #000;
+ }
+
+ .btnDesign:before,
+ .btnDesign:after {
+   position: absolute;
+   content: "";
+   left: 0;
+   width: 100%;
+   height: 50%;
+   right: 0;
+   z-index: -1;
+   background: #000;
+   transition: all 0.3s ease;
+ }
+
+ .btnDesign:before {
+   top: 0;
+ }
+
+ .btnDesign:after {
+   bottom: 0;
+ }
+
+ .btnDesign:hover:before,
+ .btnDesign:hover:after {
+   height: 0;
+   background-color: #000;
+ }

@@ -1,0 +1,118 @@
+.main{
+    min-height: 100vh;
+    position: relative;
+
+}
+
+.content{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: clamp(2rem, 1rem + 5vw, 5rem);
+}
+
+
+.content.white{
+    background-color: rgb(231, 229, 229);
+    color: black;
+}
+
+.content.black{
+    background-image: 
+        linear-gradient(rgba(29, 29, 29, 0.9),
+        rgba(0, 0, 0, 0.9)),
+        url(../public/japan-wallpaper.jpg);
+        filter: grayscale(100%);
+    background-color: black;
+    color: rgb(231, 229, 229);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 100%);
+}
+
+.main__textBlock{
+    max-width: 900px;
+    font-size: 4vw;
+    
+}
+
+.main__textBlock > h4{
+    font-size: 3.5vw;
+    font-weight: 400;
+}
+
+.main__textBlock > h1{
+    font-weight: 600;
+}
+
+/*Projects Section*/
+
+.projects__body{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    gap: 2rem;
+}
+
+.projects__main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.projects__suptitle{
+    font-size: 1.5rem;
+}
+
+.projects__titles{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.projects__pic{
+    max-width: 100%;
+    width: 100%;
+    transition: 0.7s;
+    filter: grayscale();
+    
+}
+
+.projects__pic:hover{
+    filter: none;
+}
+
+.projects__title{
+    font-size: clamp(1rem, 1rem + 4vw, 4rem);;
+    font-weight: 500;
+}
+
+.projects__buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (max-width: 1490px) {
+    .projects__body{
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 615px) {
+    .projects__body{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0;
+        /* grid-template-columns: 100%; */
+        padding-top: 20px;
+    }
+    .projects__main > div{
+        padding: 10px ;
+    }
+}
