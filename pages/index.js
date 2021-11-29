@@ -10,7 +10,7 @@ import { LazyMotion, motion } from 'framer-motion';
 import {fadeIn} from '../variants';
 
 export async function getServerSideProps(context) {
-  let res = await fetch("http://localhost:3000/api/projects", {
+  let res = await fetch("asmlvsk.vercel.app/api/projects", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
