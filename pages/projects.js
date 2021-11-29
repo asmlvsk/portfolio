@@ -3,7 +3,7 @@ import styles from '../styles/ProjectsPage/ProjectsPage.module.css'
 import { motion } from 'framer-motion';
 
 export async function getServerSideProps(context) {
-    let res = await fetch("http://localhost:3000/api/projects", {
+    let res = await fetch(process.env.PROD_URL + "/api/projects", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
