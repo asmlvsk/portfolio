@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 export async function getServerSideProps(context) {
 
   let dev = process.env.NODE_ENV !== 'production';
-  export const server = dev ? 'http://localhost:3000' : 'https://asmoilovskyi.com';
+  const server = dev ? 'http://localhost:3000' : 'https://asmoilovskyi.com';
 
     let res = await fetch(`${server}/api/projects`, {
         method: "GET",
