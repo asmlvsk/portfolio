@@ -12,9 +12,9 @@ import {fadeIn} from '../variants';
 export async function getServerSideProps(context) {
 
   let dev = process.env.NODE_ENV !== 'production';
-  let { DEV_URL, PROD_URL } = process.env;
+  const server = dev ? 'http://localhost:3000' : 'https://asmoilovskyi.com';
 
-  let res = await fetch(`${dev ? DEV_URL : PROD_URL}/api/projects`, {
+  let res = await fetch(`${server}/api/projects`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
