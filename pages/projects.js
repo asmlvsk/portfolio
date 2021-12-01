@@ -3,7 +3,11 @@ import styles from '../styles/ProjectsPage/ProjectsPage.module.css'
 import { motion } from 'framer-motion';
 
 export async function getServerSideProps(context) {
-    let res = await fetch("https://asmlvsk.vercel.app/api/projects", {
+    
+    let dev = process.env.NODE_ENV !== 'production';
+    let { DEV_URL, PROD_URL } = process.env;
+  
+    let res = await fetch(`${dev ? DEV_URL : PROD_URL}/api/projects`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
